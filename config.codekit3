@@ -26,7 +26,7 @@
 		"oF": 0,
 		"oS": 3
 		},
-	"/assets/sass/3-parts/nav.sass": {
+	"/assets/sass/1-vars/_color.sass": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -34,7 +34,33 @@
 		"ft": 2,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "/assets/sass/3-parts/nav.css",
+		"oAP": "/assets/sass/1-vars/_color.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/assets/sass/2-basics/_containers.sass": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 2,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/assets/sass/2-basics/_containers.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/assets/sass/3-parts/_nav.sass": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 2,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/assets/sass/3-parts/_nav.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
