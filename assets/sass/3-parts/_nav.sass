@@ -1,9 +1,13 @@
 
+$nav-color: $primary-color
+
 
 header
   height: 40px
   width: 100%
   top: 0
+  display: flex
+  background-color: $nav-color
 
   ul
     height: 100%
@@ -12,6 +16,7 @@ header
     z-index: 99
 
   .nav
+    margin: 0px
     width: 50%
     display: flex
     justify-content: space-between
@@ -25,10 +30,12 @@ header
         display: block
         color: white
         text-decoration: none
-        background-color: $primary-color
+        background-color: $nav-color
+        display: flex
+        justify-content: center
+        align-items: center
 
     &-has-children
-      position: relative
       z-index: 99
 
       .nav-sub

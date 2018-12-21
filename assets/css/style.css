@@ -14,13 +14,16 @@ Parts
 header {
   height: 40px;
   width: 100%;
-  top: 0; }
+  top: 0;
+  display: flex;
+  background-color: #1B9AAA; }
   header ul {
     height: 100%;
     list-style-type: none;
     padding-left: 0px;
     z-index: 99; }
   header .nav {
+    margin: 0px;
     width: 50%;
     display: flex;
     justify-content: space-between; }
@@ -33,9 +36,11 @@ header {
         display: block;
         color: white;
         text-decoration: none;
-        background-color: #1B9AAA; }
+        background-color: #1B9AAA;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
     header .nav-has-children {
-      position: relative;
       z-index: 99; }
       header .nav-has-children .nav-sub {
         position: relative;
