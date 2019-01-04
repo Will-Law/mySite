@@ -8,6 +8,16 @@
 
   &-content
     color: white
+    text-align: center
+
+    h2
+      transform: translateY(-100%)
+      opacity: 0
+      transition: transform 1s, opacity .5s
+
+    .show
+      opacity: 1
+      transform: translateY(50%)
 
   #hero-tag-list
     display: none
