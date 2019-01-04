@@ -1,0 +1,16 @@
+/*
+Theme Name: Will Theme
+Author: Will Law
+Description: A theme
+Theme URI: williamlawdev.com
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain:
+*/
+
+/**
+ * this stylesheet is not loaded in the theme
+ * it is here only to allow WordPress to see the theme
+ * all css is handled with SASS in the assets/ folder
+ */
