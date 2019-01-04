@@ -4,10 +4,10 @@
 function loadstyles(){
   wp_enqueue_style('main_stylesheet', get_template_directory_uri(). '/assets/css/style.css');
   wp_enqueue_script('main_scripts', get_template_directory_uri(). '/assets/js/main-min.js', array(), '1.0.0', true);
-
 }
 add_action('wp_enqueue_scripts', 'loadstyles');
 
+//tidies up scripts and removes the 'type' tag
 add_filter('script_loader_tag', 'clean_script_tag');
   function clean_script_tag($input) {
   $input = str_replace("type='text/javascript' ", '', $input);
