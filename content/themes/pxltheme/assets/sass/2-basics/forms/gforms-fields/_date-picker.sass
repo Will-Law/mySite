@@ -1,0 +1,182 @@
+//
+// Gravity forms date picker
+//
+
+
+// Date Picker Container
+.ginput_container_date
+	position: relative
+
+
+
+// Date Picker Icon Image
+.ui-datepicker-trigger
+	+center(vr, $right: $base_px)
+	cursor: pointer
+
+
+
+// Date Picker ui styling
+.ui-datepicker
+	height: auto
+	margin: 0
+	+box-shadow
+	+border-radius
+	overflow: hidden
+
+
+.ui-datepicker a
+	text-decoration: none
+
+
+.ui-datepicker table
+	width: 100%
+	border-collapse: collapse
+
+
+
+// Header
+.ui-datepicker-header
+	background-color: $primary-invert
+	color: $primary-color
+	min-height: 60px !important
+
+
+.ui-datepicker-title
+	text-align: center
+	margin: 0 40px
+	padding: 10px 0
+
+
+.ui-datepicker-title select
+	width: 45%
+	margin: 0 2.5%
+	float: left
+	height: 40px
+
+
+.ui-datepicker-prev,
+.ui-datepicker-next
+	display: inline-block
+	margin-top: 10px
+	width: 40px
+	height: 40px
+	text-align: center
+	cursor: pointer
+	line-height: 600%
+	overflow: hidden
+	position: relative
+
+	&::before
+		+center
+		font-family: $icons
+		color: $primary-color
+
+
+.ui-datepicker-prev
+	float: left
+	background-position: center -30px
+
+	&::before
+		content: '\f104'
+
+
+.ui-datepicker-next
+	float: right
+	background-position: center 0px
+
+	&::before
+		content: '\f105'
+
+
+
+// Day of the week
+.ui-datepicker thead
+	background: $primary-invert
+	border-bottom: 1px solid #bbb
+
+
+.ui-datepicker th
+	text-transform: uppercase
+	text-align: center
+	font-size: 1rem
+	padding: 5px 0
+	letter-spacing: 1px
+	color: $primary-color
+
+
+
+// Date picker
+.ui-datepicker tbody td
+	padding: 0
+	border-top: 1px solid #bbb
+	border-right: 1px solid #bbb
+
+
+.ui-datepicker tbody td:last-child
+	border-right: 0px
+
+
+.ui-datepicker tbody tr
+	border-bottom: 1px solid #bbb
+
+
+.ui-datepicker tbody tr:last-child
+	border-bottom: 0px
+
+
+.ui-datepicker td span,
+.ui-datepicker td a
+	display: inline-block
+	text-align: center
+	width: 40px
+	height: 40px
+	line-height: 40px
+	color: $primary-invert
+
+
+.ui-datepicker-calendar .ui-state-default
+	background-color: $secondary-color
+
+
+.ui-datepicker-calendar .ui-state-hover
+	background: darken($secondary-color, $color-shift)
+
+
+.ui-datepicker-calendar .ui-state-active
+	background-color: $primary-highlight
+	border: 1px solid $primary-invert
+	color: $primary-color
+	position: relative
+
+
+.ui-datepicker-unselectable .ui-state-default
+	background: #f4f4f4
+	color: #b4b3b3
+
+
+.ui-datepicker-calendar td:first-child .ui-state-active
+	width: 29px
+	margin-left: 0
+
+
+.ui-datepicker-calendar td:last-child .ui-state-active
+	width: 29px
+	margin-right: 0
+
+
+.ui-datepicker-calendar tr:last-child .ui-state-active
+	height: 29px
+	margin-bottom: 0
+
+
+td.ui-datepicker-unselectable.ui-state-disabled
+	background-color: #d7d7d7
+
+
+table.ui-datepicker-calendar
+	margin: 0 0 0 0 !important
+
+
+body div#ui-datepicker-div[style]
+	z-index: 9999 !important

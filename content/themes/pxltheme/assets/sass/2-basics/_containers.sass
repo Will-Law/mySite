@@ -1,0 +1,55 @@
+//
+// Main Stylesheet
+//
+
+
+
+.container-all
+	overflow: hidden
+
+.container-page
+	max-width: 1440px
+	margin: auto
+	background-color: $white
+	padding-top: 60px
+
+.container
+	margin: 0 auto
+	max-width: 800px
+	padding: 5%
+
+.header-container
+	@include grid-container
+
+
+	// Turn on visual grid-visual
+	// ========================================
+	// @include grid-visual
+	//
+	// @include grid-media($mobile)
+	// 	@include grid-visual
+	//
+	// @include grid-media($tablet-portrait)
+	// 	@include grid-visual
+	//
+	// @include grid-media($tablet-landscape)
+	// 	@include grid-visual
+	//
+
+.overlay
+	position: absolute
+	top: 0
+	left: 0
+	width: 100%
+	height: 100%
+	background-color: rgba($black, 0.45)
+
+section
+	padding: ($base_px * 2) 0
+	position: relative
+
+.content-wrapper
+	margin: 0 auto
+	padding: $base_px
+	max-width: 650px
+	text-align: center

@@ -1,0 +1,80 @@
+
+$hero-color: $secondary-color
+
+//Converts the colour var from hex to rgba
+$hero-red: red($hero-color)
+$hero-green: green($hero-color)
+$hero-blue: blue($hero-color)
+
+.hero-slider
+  height: calc(100vh - 60px)
+  +grid-media($tablet-portrait)
+    height: 600px
+
+  .slide
+    position: relative
+
+  .slide-content
+    position: absolute
+    display: flex
+    flex-direction: column
+    width: 100%
+    +grid-media($tablet-portrait)
+      min-height: 50%
+      width: 60%
+    bottom: 0
+    padding: 3% 5%
+    background-color: rgba($hero-red, $hero-green, $hero-blue, 0.6)
+
+    &-inner
+      margin-top: $base_px
+      color: white
+      h1, h4
+        color: white
+        margin: 0
+      h4
+        margin-top: $base_px
+        display: none
+        +grid-media($tablet-portrait)
+          display: block
+
+    .slider-buttons
+      display: flex
+      flex-direction: column
+      width: 60%
+      +grid-media($tablet-portrait)
+        flex-direction: row
+        width: 100%
+      button
+        border: 1px solid rgba(250, 250, 250, 0.8)
+        margin-right: $base_px / 2
+        color: white
+
+        &:hover
+          background-color: white
+          color: $secondary-color
+
+    .hero-nav
+      width: 50%
+      align-self: baseline
+      margin-top: $base_px
+      .quicknav
+        +grid-media($tablet-portrait)
+          bottom: 0
+          display: flex
+          align-items: center
+          height: 50px
+          button
+            width: 10px
+            height: 10px
+            background-color: white
+            border: none
+            padding: 0px
+            border-radius: 50%
+            margin-right: 3%
+            opacity: 0.6
+            margin-top: 0px
+          .selected
+            width: 15px
+            height: 15px
+            opacity: 1

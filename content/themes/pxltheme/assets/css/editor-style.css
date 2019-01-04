@@ -1,0 +1,121 @@
+html {
+  padding: 10px !important; }
+
+/*
+1-dependencies
+-------------------------------------*/
+* {
+  margin: 0;
+  padding: 0;
+  background-repeat: no-repeat; }
+
+html {
+  font-size: 62.5%;
+  /* Corrects text resizing oddly in IE6/7 when body font-size is set using em units http://clagnut.com/blog/348/#c790 */
+  overflow-y: scroll;
+  /* Keeps page centered in all browsers regardless of content height */
+  -webkit-text-size-adjust: 100%;
+  /* Prevents iOS text size adjust after orientation change, without disabling user zoom */
+  -ms-text-size-adjust: 100%;
+  /* www.456bereastreet.com/archive/201012/controlling_text_size_in_safari_for_ios_without_disabling_user_zoom/ */ }
+
+*,
+*:before,
+*:after {
+  /* apply a natural box layout model to all elements; see http://www.paulirish.com/2012/box-sizing-border-box-ftw/ */
+  box-sizing: border-box; }
+
+img {
+  max-width: 100%;
+  height: auto; }
+
+a img {
+  border: none; }
+
+.gigantic, .huge, .large, .bigger, .big, .smallish,
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+  font-family: "Merriweather", sans-serif;
+  color: #293439;
+  line-height: 1.3;
+  margin-top: 52px; }
+  .gigantic:first-child, .huge:first-child, .large:first-child, .bigger:first-child, .big:first-child, .smallish:first-child,
+  h1:first-child, h2:first-child, h3:first-child, h4:first-child, h5:first-child, h6:first-child {
+    margin-top: 0; }
+
+.gigantic {
+  font-size: 110px; }
+
+.huge, h1 {
+  font-size: 4rem; }
+
+.large, h2 {
+  font-size: 3.5rem; }
+
+.bigger, h3 {
+  font-size: 3rem; }
+
+.big, h4 {
+  font-size: 2rem; }
+
+.medium, h5 {
+  font-size: 2rem; }
+
+.smallish, h6 {
+  font-size: 2rem; }
+
+.small, small {
+  font-size: 1.2rem; }
+
+p, em, strong, blockquote {
+  line-height: 1.8;
+  margin-top: 26px; }
+
+em {
+  font-style: italic; }
+
+strong {
+  font-weight: 700; }
+
+hr {
+  border: none;
+  border-bottom: 2px solid #293439;
+  clear: both;
+  margin: 0;
+  margin-bottom: 26px;
+  padding-top: 26px;
+  height: 0; }
+
+blockquote {
+  border-radius: 5px;
+  padding: 52px;
+  background-color: #293439;
+  color: #F6F8FB;
+  margin-bottom: 26px; }
+  blockquote strong {
+    color: #293439; }
+
+/* lists */
+ol, ul {
+  margin-top: 26px;
+  padding-left: 26px; }
+  ol.no-bullets, ul.no-bullets {
+    list-style: none;
+    padding-left: 0; }
+
+li {
+  line-height: 26px; }
+
+pre {
+  font-size: 1.6rem;
+  color: #f54646; }
+
+* {
+  font-family: "Merriweather", sans-serif; }
+
+body {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  font-family: "Merriweather", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%; }

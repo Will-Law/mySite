@@ -1,0 +1,47 @@
+
+.imagetext-wrapper
+  display: flex
+  flex-direction: column
+  margin: 0% 5%
+  +grid-media($tablet-portrait)
+    padding-bottom: 5%
+
+
+.imagetext-single
+  display: flex
+  flex-direction: column
+  +grid-media($tablet-portrait)
+    flex-direction: row
+    padding-bottom: 5%
+
+  .imagetext-img-wrapper
+    width: 100%
+    min-height: 300px
+    +grid-media($tablet-portrait)
+      min-height: 400px
+    overflow: hidden
+    display: flex
+    position: relative
+
+    img
+      align-self: center
+      width: 100%
+      height: 100%
+      object-fit: cover
+
+  .imagetext-single-content
+    width: 100%
+    position: relative
+    margin: 10% 0%
+
+    .imagetext-single-inner
+      padding: 5% 0%
+      +grid-media($tablet-portrait)
+        width: 65%
+        padding: 0px
+        +center()
+
++grid-media($tablet-portrait)
+  .imagetext-single:nth-child(odd)
+    .imagetext-img-wrapper
+      order: 1

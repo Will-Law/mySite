@@ -1,0 +1,12 @@
+//
+// Transition Mixins
+//
+
+
+// Animation
+@mixin animate ($property: $transition-property, $duration: $transition-duration, $delay: $transition-delay, $timing: $transition-timing)
+	transition: $property $duration $delay $timing
+
+// Scale
+@mixin scale ($amount: $scale-amount)
+	transform: scale($amount)

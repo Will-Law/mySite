@@ -1,0 +1,31 @@
+//
+// Default Navigation
+//
+
++grid-media($tablet-portrait)
+
+	.site-navigation
+		position: static
+		height: auto
+		opacity: 1
+		overflow: visible
+		text-align: right
+
+		ul
+
+			li
+				display: inline-block
+
+				&:hover
+					> .sub-menu
+						left: 0
+
+				ul.sub-menu
+					position: absolute
+					top: 100%
+					left: -999em
+					z-index: 99999
+					background-color: $primary-color
+
+	.menu-button
+		display: none

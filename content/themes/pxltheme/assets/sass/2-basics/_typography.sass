@@ -1,0 +1,90 @@
+//
+// Typography Styling
+//
+
+
+//	Headings
+.gigantic, .huge, .large, .bigger, .big, .smallish,
+h1, h2, h3, h4, h5, h6
+	font-weight: normal
+	font-family: $headings
+	color: $primary-invert
+	line-height: 1.3
+	margin-top: $base_px * 2
+
+	&:first-child
+		margin-top: 0
+
+.gigantic
+	font-size: 110px
+
+.huge, h1
+	font-size: 4rem
+
+.large, h2
+	font-size: 3.5rem
+
+.bigger, h3
+	font-size: 3rem
+
+.big, h4
+	font-size: 2rem
+
+.medium, h5
+	font-size: 2rem
+
+.smallish, h6
+	font-size: 2rem
+
+.small, small
+	font-size: 1.2rem
+
+
+
+// Basic Text Style
+p, em, strong, blockquote
+	line-height: 1.8
+	margin-top: $base_px
+
+em
+	font-style: italic
+
+strong
+	font-weight: 700
+
+hr
+	border: none
+	border-bottom: 2px solid $primary-invert
+	clear: both
+	margin: 0
+	margin-bottom: $base_px
+	padding-top: $base_px
+	height: 0
+
+blockquote
+	+border-radius
+	padding: $base_px * 2
+	background-color: $secondary-color
+	color: $secondary-invert
+	margin-bottom: $base_px
+
+	strong
+		color: $secondary-color
+
+
+
+/* lists */
+ol, ul
+	margin-top: $base_px
+	padding-left: $base_px
+
+	&.no-bullets
+		list-style: none
+		padding-left: 0
+
+li
+	line-height: $base_px
+
+pre
+	font-size: $base_font_size
+	color: $red

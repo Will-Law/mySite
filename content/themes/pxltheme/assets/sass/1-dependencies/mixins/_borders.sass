@@ -1,0 +1,28 @@
+//
+// Border Mixins
+//
+
+
+// Mixings
+// ================================
+// Border Radius
+@mixin border-radius($radius: $border-radius)
+	border-radius: $radius
+
+
+// Borders
+@mixin border($side: null, $thickness: $border-thickness, $style: $border-style, $color: $border-color)
+	@if $side == top
+		border-top: $thickness $style $color
+
+	@else if $side == right
+		border-right: $thickness $style $color
+
+	@else if $side == bottom
+		border-bottom: $thickness $style $color
+
+	@else if $side == left
+		border-left: $thickness $style $color
+
+	@else
+		border: $thickness $style $color

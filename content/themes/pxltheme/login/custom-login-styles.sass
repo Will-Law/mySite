@@ -1,0 +1,42 @@
+@import '../assets/sass/1-dependencies/vars'
+
+body.login
+	background-color: $primary-color
+
+	h1 a
+		background-position: center
+		height: 200px
+		width: 150px
+		background-size: 150px
+		margin: auto
+
+
+	label
+		color: $primary-invert
+		font-weight: 700
+
+
+	input[type="text"],
+	input[type="password"],
+	input#rememberme
+		background-color: #ffffff
+		border: $primary-invert 2px solid
+
+	.button-primary
+		float: right
+		background-color: $primary-invert
+		color: #ffffff
+		border-radius: 0px
+		border: none
+		box-shadow: none
+		text-shadow: none
+
+
+		&:hover, &:active, &:focus
+			background-color: darken($primary-invert, 10%)
+			border: none
+			box-shadow: none
+
+	#nav,
+	#backtoblog
+		text-align: center

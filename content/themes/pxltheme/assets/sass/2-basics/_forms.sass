@@ -1,0 +1,211 @@
+//
+// Forms Styling
+//
+
+
+// Form Vars
+$form-font-family: inherit
+$form-font-size: $base_font_size
+$form-line-height: 1
+$form-color: $primary-highlight-invert
+$form-placeholder-color: $primary-highlight
+
+
+
+
+
+
+// Form Mixins
+@mixin field-defaults
+	+border-radius
+	+border('', 1px, solid, $primary-invert)
+	margin-bottom: 5px
+	font-family: $form-font-family
+	font-size: $form-font-size !important
+	line-height: $form-line-height
+	max-width: 100%
+	color: $form-color
+	background-color: $primary-color
+
+
+
+
+
+
+// Form list
+form
+	margin-bottom: $base_px
+	ul
+		list-style: none
+		margin: 0
+		padding: 0
+	li
+		margin-bottom: 10px
+		clear: both
+		@include animate
+
+
+
+
+
+// Inputs
+input,
+select,
+textarea
+	+field-defaults
+	@include animate
+
+	// Placeholders
+	&::-webkit-input-placeholder
+		color: $form-placeholder-color
+		font-family: $copy
+
+	&:-moz-placeholder  /* Firefox 18- */
+		color: $form-placeholder-color
+		font-family: $copy
+
+	&::-moz-placeholder   /* Firefox 19+ */
+		color: $form-placeholder-color
+		font-family: $copy
+
+	&:-ms-input-placeholder
+		color: $form-placeholder-color
+		font-family: $copy
+
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+textarea,
+select
+	padding: 10px
+	width: 100%
+
+textarea
+	overflow: auto
+	vertical-align: top
+
+textarea:focus,
+input:focus
+	outline: 0
+	background-color: lighten($primary-highlight, 30%)
+
+
+
+
+
+// Disabled
+button[disabled],
+input[disabled],
+select[disabled],
+textarea[disabled]
+	cursor: default
+	opacity: .5
+
+
+
+
+
+// Label
+label
+	font-size: 1.3rem
+	display: block
+	padding: 5px
+	margin: 0
+	border: none
+
+
+
+
+
+// Input submit button
+input[type="submit"]
+	background-color: $primary-color
+	margin: 0 auto
+	display: block
+	width: 120px !important
+	display: flex !important
+	justify-content: center
+
+	&:hover
+		background-color: $grey
+
+
+
+
+
+// Select
+select
+	-webkit-appearance: menulist
+	cursor: pointer
+	display: block
+	outline: none
+	position: relative
+	vertical-align: middle
+	z-index: 5
+	border-radius: 0
+	width: 100%
+	height: 52px
+	padding: 0
+
+
+
+
+
+// Search Input
+input[type="search"]
+	-webkit-appearance: textfield
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration
+	-webkit-appearance: none
+
+
+
+
+
+// Radio and checkbox
+input[type="radio"]
+	appearance: radio
+
+input[type="checkbox"]
+	appearance: checkbox
+
+ul[class*="checkbox"],
+ul[class*="radio"]
+
+	input
+		margin-right: $base_px
+
+	label
+		font-size: $form-font-size
+		color: $form-color
+
+	li
+		+field-defaults
+		position: relative
+		margin-bottom: 10px
+
+		input, label
+			display: block
+			padding: 10px
+			padding-left: 30px
+			margin: 0
+			vertical-align: middle
+
+		input
+			height: 18px
+			+center(v)
+			margin-left: 10px
+
+.form
+	.gform_body
+		.ginput_container
+			input
+				width: 100%
+
+// Imports
+@import "forms/gforms"

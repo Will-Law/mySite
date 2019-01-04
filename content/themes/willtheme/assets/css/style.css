@@ -1,0 +1,54 @@
+/*
+Dependencies
+-------------------------------------*/
+/*
+Basics
+-------------------------------------*/
+body {
+  font-family: arial;
+  margin: auto; }
+
+h1, h2, h3, h4, ul, li {
+  margin: 0; }
+
+h1 {
+  font-size: 2.4rem; }
+
+h2 {
+  font-size: 2.0rem; }
+
+h3 {
+  font-size: 1.8rem; }
+
+h4 {
+  font-size: 1.4rem; }
+
+/*
+Parts
+-------------------------------------*/
+.hero {
+  height: 400px;
+  background: linear-gradient(-45deg, #84fab0, #8fd3f4);
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .hero-content {
+    color: white; }
+  .hero #hero-tag-list {
+    display: none; }
+
+header {
+  height: 40px;
+  transform: translateY(-40px);
+  width: 100%;
+  top: 0;
+  display: flex; }
+  header ul {
+    height: 100%;
+    list-style-type: none;
+    padding-left: 0px;
+    z-index: 99; }
+
+/*
+Pages
+-------------------------------------*/

@@ -1,0 +1,14 @@
+//
+// Links
+//
+
+
+$link-color: $green
+
+a
+	color: $link-color
+	line-height: $base_px
+	+animate
+
+	&:hover, &:focus, &:active
+		color: darken($link-color, $color-shift)

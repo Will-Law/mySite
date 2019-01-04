@@ -1,0 +1,37 @@
+
+.textarea-wrapper
+  display: flex
+  margin: 10% 0%
+  h2
+    margin-bottom: $base_px
+    
+  p:first-of-type
+    margin-top: 0px
+
+  +grid-media($tablet-portrait)
+    margin: 0px
+
+.container-side
+  width: 100%
+  +grid-media($tablet-portrait)
+    width: 70%
+  padding: 10% 5%
+
+.textarea-img-wrapper
+  display: none
+
++grid-media($tablet-portrait)
+  .textarea-img-wrapper
+    width: 30%
+    display: flex
+    overflow: hidden
+
+    img
+      align-self: center
+      height: 100%
+      width: 100%
+      object-fit: cover
+
+  .textarea-wrapper:nth-child(odd)
+    .container-side
+      order: -1
