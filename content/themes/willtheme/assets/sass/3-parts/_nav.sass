@@ -4,13 +4,27 @@ $nav-color: $primary-color
 
 header
   height: 40px
-  transform: translateY(-40px)
+  transform: translateY(-100%)
   width: 100%
   top: 0
-  display: flex
 
-  ul
-    height: 100%
-    list-style-type: none
-    padding-left: 0px
-    z-index: 99
+  .menu-primary-nav-container
+    max-width: 500px
+    margin: auto
+    transform: translateY(50%)
+
+    ul
+      height: 100%
+      display: flex
+      justify-content: space-between
+      align-items: center
+      list-style-type: none
+      padding-left: 0px
+      z-index: 99
+
+      li
+        a
+          color: white
+
+.head-scroll
+  

@@ -7,12 +7,11 @@
 
 <?php get_template_part( 'parts/hero' ); ?>
 
-<header>
+<div id=page-container class=page-container>
 
-  <div class="menu-primary-navigation">
-    <?php wp_nav_menu(array('theme_location'=>'navigation'));?>
-  </div>
+<header id=header>
 
+  <?php wp_nav_menu(array('theme_location'=>'navigation'));?>
 
 </header>
 
